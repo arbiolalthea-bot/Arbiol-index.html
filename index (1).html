@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Althea's Luxuria - Exclusive Bags</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#121212',
+                        gold: '#D4AF37',
+                        cream: '#F5F5DC',
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        montserrat: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .gold-gradient {
+                background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+                background-size: 200% 200%;
+                animation: goldShine 3s ease-in-out infinite;
+            }
+            @keyframes goldShine {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-montserrat antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/80 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-playfair font-bold text-gold tracking-wider">
+                    ALTHEA'S LUXURIA
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
+                    <a href="#" class="hover:text-gold transition duration-300">Home</a>
+                    <a href="#" class="hover:text-gold transition duration-300">Collections</a>
+                    <a href="#" class="hover:text-gold transition duration-300">About</a>
+                    <a href="#" class="hover:text-gold transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image (Replace with your image) -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Luxury Bags" 
+                 class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4">
+            <p class="text-gold font-light tracking-[0.3em] uppercase mb-4 animate-pulse">Est. 2026</p>
+            <h1 class="font-playfair font-bold text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">
+                Althea's <span class="text-gold">Luxuria</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+                Defining Elegance. Carrying Luxury. 
+                Discover our exclusive collection of premium handbags.
+            </p>
+            <a href="#shop" class="inline-block border border-gold text-gold hover:bg-gold hover:text-black transition-all duration-500 px-8 py-3 tracking-widest uppercase text-sm">
+                View Collection
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="shop" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl text-white">Timeless <span class="text-gold">Creations</span></h2>
+                <div class="w-24 h-1 bg-gold mx-auto my-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Item 1 -->
+                <div class="group relative bg-gray-900 p-5 border border-gray-800 hover:border-gold transition duration-500">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500&auto=format&fit=crop" alt="Tote Bag" class="w-full h-72 object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-playfair text-xl text-white">The Classic Tote</h3>
+                    <p class="text-gray-400 text-sm">Premium Leather</p>
+                    <p class="text-gold mt-2 font-semibold">₱ 2,500.00</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group relative bg-gray-900 p-5 border border-gray-800 hover:border-gold transition duration-500">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=500&auto=format&fit=crop" alt="Shoulder Bag" class="w-full h-72 object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-playfair text-xl text-white">Elegance Shoulder</h3>
+                    <p class="text-gray-400 text-sm">Genuine Suede</p>
+                    <p class="text-gold mt-2 font-semibold">₱ 3,200.00</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group relative bg-gray-900 p-5 border border-gray-800 hover:border-gold transition duration-500">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1566155119454-2b581dd44c59?w=500&auto=format&fit=crop" alt="Clutch" class="w-full h-72 object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-playfair text-xl text-white">Royal Clutch</h3>
+                    <p class="text-gray-400 text-sm">Embellished Design</p>
+                    <p class="text-gold mt-2 font-semibold">₱ 1,800.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-900 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="font-playfair text-2xl text-gold mb-4">ALTHEA'S LUXURIA</h2>
+            <p class="text-gray-500 text-sm">© 2026 Althea's Luxuria. All rights reserved.</p>
+            <p class="text-gray-600 text-xs mt-2">Designed for the Modern Sophisticate</p>
+        </div>
+    </footer>
+
+</body>
+</html>
